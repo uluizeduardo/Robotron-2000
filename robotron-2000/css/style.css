@@ -21,10 +21,10 @@ body, input {
     font-family: 'Teko', sans-serif;
 }
 
-main {
+.principal {
     width: 80vw;
     height: 80vh;
-    margin: 10vh 8vw 10vh 12vw;
+    margin: 10vh 8vw 0vh 12vw;
     display: flex;
     gap: 1vw;
 }
@@ -132,7 +132,6 @@ main {
 }
 
 .producao {
-    margin-top: 1em;
     font-size: 2em;
     text-transform: uppercase;
     padding: 0.2em 1em;
@@ -208,6 +207,38 @@ main {
     flex-basis: 35%;
     margin: 10px 0 0;
 }
+
+
+/****************************** Cores do robo *****/
+
+.cores-robo{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    float: right;
+    margin-right: 10%;
+    margin-top: -50px;
+}
+
+.titulo-cor-robo{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 50;
+    font-size: 30px;
+}
+
+.flexItem{
+    width: 25px;
+    height: 25px;
+}
+
+.amarelo{ background-color: yellow;}
+.preto{ background-color: black;}
+.rosa{ background-color: hotpink;}
+.vermelho{ background-color: red;}
+.azul{ background-color: blue;}
+.branco{ background-color: white;}
+
 
 @media screen and (max-width: 1600px) {
     body { 

@@ -37,6 +37,20 @@ const pecas = {
     }
 }
 
+
+const cor = document.querySelectorAll("[data-cor]");
+
+cor.forEach( (elemento) => {
+    elemento.addEventListener('click', (evento) => {
+        trocaImagem(evento.target.dataset.cor)
+    })
+})
+
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/" + cor + ".png";
+ }
+
+
 controle.forEach( (elemento) => {
     elemento.addEventListener('click', (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode);

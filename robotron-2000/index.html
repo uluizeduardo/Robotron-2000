@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <main>
+    <section class="principal">
         <section class="robotron">
             <img class="robo" src="img/robotron.png" alt="Robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
@@ -84,20 +84,22 @@
                             <buttom class="controle-ajuste" data-controle="+" data-peca="pernas">+</buttom>
                         </div>
                     </div>
-                    <hr class="linha">
-                    <div class="peca">
-                        <label for="" class="peca-titulo">Foguetes</label>
-                        <div class="controle">
-                            <buttom class="controle-ajuste" data-controle="-" data-peca="foguetes">-</buttom>
-                            <input type="text" class="controle-contador" value="00" data-contador>
-                            <buttom class="controle-ajuste" data-controle="+" data-peca="foguetes">+</buttom>
-                        </div>
-                    </div>
                 </div>
-                <input type="submit" value="Iniciar produção" class="producao" id="producao">
             </form>
         </section>
-    </main>
+    </section>
+    <section class="cores-robo">
+        <div class="cores-conteudo">
+            <label for="" class="titulo-cor-robo">Cor do robô</label>
+            <button class="flexItem amarelo" data-cor="Amarelo"></button>
+            <button class="flexItem preto" data-cor="Preto"></button>
+            <button class="flexItem rosa" data-cor="Rosa"></button>
+            <button class="flexItem vermelho" data-cor="Vermelho"></button>
+            <button class="flexItem azul" data-cor="Azul"></button>
+            <button class="flexItem branco" data-cor="Branco"></button>                    
+        </div>
+        <input type="submit" value="Iniciar produção" class="producao" id="producao">
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>
